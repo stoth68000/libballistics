@@ -11,6 +11,7 @@ AC_COPYRIGHT([GPL])
 AC_INIT([libballistics],[1.1.0],[jonathan@zdziarski.com])
 CONFIGURE_ARGS=$@
 AC_CONFIG_SRCDIR(./src)
+AM_SILENT_RULES([yes])
 
 AM_INIT_AUTOMAKE([1.7 foreign])
 
