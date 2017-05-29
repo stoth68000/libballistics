@@ -7,7 +7,7 @@
 
 
 /* Configure Arguments */
-#define CONFIGURE_ARGS "/usr/local/share/config.site /usr/local/etc/config.site"
+#define CONFIGURE_ARGS "--prefix=/Users/stoth/GIT/libballistics/root"
 
 /* Defined if debug output is enabled */
 /* #undef DEBUG */
@@ -51,6 +51,9 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#define LT_OBJDIR ".libs/"
+
 /* Name of package */
 #define PACKAGE "libballistics"
 
@@ -65,6 +68,9 @@
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "libballistics"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1.1.0"
