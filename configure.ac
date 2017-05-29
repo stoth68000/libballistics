@@ -100,6 +100,6 @@ AH_BOTTOM([
 #endif /* !__auto_config_h */
 ])
 
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile tools/Makefile])
 AC_OUTPUT
 

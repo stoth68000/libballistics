@@ -7,7 +7,7 @@
 
 includedir=@includedir@/libballistics
 
-SUBDIRS = . src 
+SUBDIRS = . src tools
 DIST_SUBDIRS = . src
 
 EXTRA_DIST = autogen.sh RELEASE.NOTES CHANGELOG LICENSE README 
