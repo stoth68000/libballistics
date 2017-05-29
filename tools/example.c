@@ -42,8 +42,7 @@ int main(int argc, char *argv[]) {
   /* If you wish to adjust for atmospheric conditions, correct the BC */
 
   printf("Original BC: %0.3f. ", bc);
-  bc = libballistics_applyAtmosphere(bc, altitude, pressure, 
-      temperature, humidity);
+  bc = libballistics_applyAtmosphere(bc, altitude, pressure, temperature, humidity);
   printf("BC Corrected for atmosphere: %0.3f\n", bc);
   
   /* Calculate the zero angle */
@@ -64,12 +63,10 @@ int main(int argc, char *argv[]) {
   libballistics_addBallisticCoefficient(context, bc, 0.0, 0.0);
 
   /* Compute the trajectory */
-  k = libballistics_computeTrajectory(context, G1, v, sh, angle, 
-      zeroangle, windspeed, windangle, 1200);
+  k = libballistics_computeTrajectory(context, G1, v, sh, angle, zeroangle, windspeed, windangle, 1200);
 
   for (s = zero; s < (zero + 1200); s += 100) {
-      printf(" %4.0f  %+6.1f %+6.1f  %+6.1f  %+6.1f      %04.0f     %04.0f"
-             "    %01.2f\n",
+      printf(" %4.0f  %+6.1f %+6.1f  %+6.1f  %+6.1f      %04.0f     %04.0f    %01.2f\n",
       libballistics_getRange(context, s),
       libballistics_getPathY(context, s),
       libballistics_getElevation(context, s),
