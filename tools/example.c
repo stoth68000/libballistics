@@ -24,20 +24,20 @@ int main(int argc, char *argv[]) {
   int s, k = 0;
   ballistics_ctx_t context;   /* Our ballistics context */
   double bc=0.475;            /* Ballistic coefficient of the projectile */
-  double v=2742;              /* Muzzle velocity (fps) */
+  double v=2691;              /* Muzzle velocity (fps) */
   double w=168;               /* Bullet weight (gr) */
-  double sh=2.5;              /* Sight height (in) */
+  double sh=1.88;             /* Sight height (in) */
   double angle=0;             /* LOS Angle (degrees) */
   double zero=100;            /* Zero range (yards) */
-  double windspeed=25;        /* Wind speed (MPH) */
+  double windspeed=0;         /* Wind speed (MPH) */
   double windangle=90;        /* Wind angle (degrees) */
   double zeroangle=0;         /* Zero angle of the bore */
 
   /* Custom atmosphere */
   double altitude = 0.0,
          pressure = 29.97,
-         temperature = 56.4,
-         humidity = .87; 
+         temperature = 56.0,
+         humidity = .93; 
 
   /* If you wish to adjust for atmospheric conditions, correct the BC */
 
